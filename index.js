@@ -7,7 +7,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 app.use(cors());
 
-app.use(exStatic('./index.html'));
+app.use(exStatic('./'));
 
 app.listen(PORT, () => {
   console.log('captain Teemo on duty')
