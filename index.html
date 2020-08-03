@@ -7,7 +7,8 @@
   <title>Weather Wenpei Z</title>
   <style>
     .weather__background {
-      background-image: url();
+      background-color: #ffffff;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg stroke='%23CCC' stroke-width='0' %3E%3Crect fill='%23F5F5F5' x='-60' y='-60' width='110' height='240'/%3E%3C/g%3E%3C/svg%3E");
       display: flex;
       justify-content: center;
       height: 100vh;
@@ -39,9 +40,11 @@
     }
 
     .weather__container {
-      border: 3px solid gray;
-      width: 700px;
-      height: 450px;
+      /* border: 1px solid black; */
+      background-color: #ffaa00;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpath fill='%23ffb100' d='M486 705.8c-109.3-21.8-223.4-32.2-335.3-19.4C99.5 692.1 49 703 0 719.8V800h843.8c-115.9-33.2-230.8-68.1-347.6-92.2C492.8 707.1 489.4 706.5 486 705.8z'/%3E%3Cpath fill='%23ffb800' d='M1600 0H0v719.8c49-16.8 99.5-27.8 150.7-33.5c111.9-12.7 226-2.4 335.3 19.4c3.4 0.7 6.8 1.4 10.2 2c116.8 24 231.7 59 347.6 92.2H1600V0z'/%3E%3Cpath fill='%23ffbf00' d='M478.4 581c3.2 0.8 6.4 1.7 9.5 2.5c196.2 52.5 388.7 133.5 593.5 176.6c174.2 36.6 349.5 29.2 518.6-10.2V0H0v574.9c52.3-17.6 106.5-27.7 161.1-30.9C268.4 537.4 375.7 554.2 478.4 581z'/%3E%3Cpath fill='%23ffc500' d='M0 0v429.4c55.6-18.4 113.5-27.3 171.4-27.7c102.8-0.8 203.2 22.7 299.3 54.5c3 1 5.9 2 8.9 3c183.6 62 365.7 146.1 562.4 192.1c186.7 43.7 376.3 34.4 557.9-12.6V0H0z'/%3E%3Cpath fill='%23ffcc00' d='M181.8 259.4c98.2 6 191.9 35.2 281.3 72.1c2.8 1.1 5.5 2.3 8.3 3.4c171 71.6 342.7 158.5 531.3 207.7c198.8 51.8 403.4 40.8 597.3-14.8V0H0v283.2C59 263.6 120.6 255.7 181.8 259.4z'/%3E%3Cpath fill='%23ffd624' d='M1600 0H0v136.3c62.3-20.9 127.7-27.5 192.2-19.2c93.6 12.1 180.5 47.7 263.3 89.6c2.6 1.3 5.1 2.6 7.7 3.9c158.4 81.1 319.7 170.9 500.3 223.2c210.5 61 430.8 49 636.6-16.6V0z'/%3E%3Cpath fill='%23ffe038' d='M454.9 86.3C600.7 177 751.6 269.3 924.1 325c208.6 67.4 431.3 60.8 637.9-5.3c12.8-4.1 25.4-8.4 38.1-12.9V0H288.1c56 21.3 108.7 50.6 159.7 82C450.2 83.4 452.5 84.9 454.9 86.3z'/%3E%3Cpath fill='%23ffeb49' d='M1600 0H498c118.1 85.8 243.5 164.5 386.8 216.2c191.8 69.2 400 74.7 595 21.1c40.8-11.2 81.1-25.2 120.3-41.7V0z'/%3E%3Cpath fill='%23fff558' d='M1397.5 154.8c47.2-10.6 93.6-25.3 138.6-43.8c21.7-8.9 43-18.8 63.9-29.5V0H643.4c62.9 41.7 129.7 78.2 202.1 107.4C1020.4 178.1 1214.2 196.1 1397.5 154.8z'/%3E%3Cpath fill='%23ffff66' d='M1315.3 72.4c75.3-12.6 148.9-37.1 216.8-72.4h-723C966.8 71 1144.7 101 1315.3 72.4z'/%3E%3C/g%3E%3C/svg%3E");
+      background-attachment: fixed;
+      background-size: cover;
       border-radius: 10px;
       box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.3);
     }
@@ -275,31 +278,31 @@
         <div class="weather__forecast">
           <div class="forecast day-one">
             <div class="forecast__day">MON</div>
-            <div class="forecast__icon"><i class="fas fa-cloud-showers-heavy"></i></div>
+            <div class="forecast__icon"><img src="http://openweathermap.org/img/wn/09d@2x.png" /></div>
             <div class="forecast__temp">9</div>
             <div class="forecast__weather">RAINING</div>
           </div>
           <div class="forecast day-two">
             <div class="forecast__day">TUE</div>
-            <div class="forecast__icon"><i class="fas fa-sun"></i></div>
+            <div class="forecast__icon"><img src="http://openweathermap.org/img/wn/01d@2x.png" /></div>
             <div class="forecast__temp">15</div>
             <div class="forecast__weather">SUNNY</div>
           </div>
           <div class="forecast day-three">
             <div class="forecast__day">WED</div>
-            <div class="forecast__icon"><i class="fas fa-cloud-sun"></i></div>
+            <div class="forecast__icon"><img src="http://openweathermap.org/img/wn/04d@2x.png" /></div>
             <div class="forecast__temp">11</div>
             <div class="forecast__weather">CLOUDY</div>
           </div>
           <div class="forecast day-four">
             <div class="forecast__day">THU</div>
-            <div class="forecast__icon"><i class="fas fa-poo-storm"></i></div>
+            <div class="forecast__icon"><img src="http://openweathermap.org/img/wn/11d@2x.png" /></div>
             <div class="forecast__temp">7</div>
             <div class="forecast__weather">STORM</div>
           </div>
           <div class="forecast day-five">
             <div class="forecast__day">FRI</div>
-            <div class="forecast__icon"><i class="fas fa-sun"></i></div>
+            <div class="forecast__icon"><img src="http://openweathermap.org/img/wn/01d@2x.png" /></div>
             <div class="forecast__temp">18</div>
             <div class="forecast__weather">SUNNY</div>
           </div>
@@ -970,12 +973,12 @@
 
 
         /**
-        * Echos the value of a value. Trys to print the value out
-        * in the best way possible given the different types.
-        *
-        * @param {Object} obj The object to print out.
-        * @param {Object} opts Optional options object that alters the output.
-        */
+         * Echos the value of a value. Trys to print the value out
+         * in the best way possible given the different types.
+         *
+         * @param {Object} obj The object to print out.
+         * @param {Object} opts Optional options object that alters the output.
+         */
         /* legacy: obj, showHidden, depth, colors*/
         function inspect(obj, opts) {
           // default options
@@ -1410,18 +1413,18 @@
 
 
         /**
-        * Inherit the prototype methods from one constructor into another.
-        *
-        * The Function.prototype.inherits from lang.js rewritten as a standalone
-        * function (not on Function.prototype). NOTE: If this file is to be loaded
-        * during bootstrapping this function needs to be rewritten using some native
-        * functions as prototype setup using normal JavaScript does not work as
-        * expected during bootstrapping (see mirror.js in r114903).
-        *
-        * @param {function} ctor Constructor function which needs to inherit the
-        *     prototype.
-        * @param {function} superCtor Constructor function to inherit prototype from.
-        */
+         * Inherit the prototype methods from one constructor into another.
+         *
+         * The Function.prototype.inherits from lang.js rewritten as a standalone
+         * function (not on Function.prototype). NOTE: If this file is to be loaded
+         * during bootstrapping this function needs to be rewritten using some native
+         * functions as prototype setup using normal JavaScript does not work as
+         * expected during bootstrapping (see mirror.js in r114903).
+         *
+         * @param {function} ctor Constructor function which needs to inherit the
+         *     prototype.
+         * @param {function} superCtor Constructor function to inherit prototype from.
+         */
         exports.inherits = require('inherits');
 
         exports._extend = function(origin, add) {
@@ -1635,11 +1638,11 @@
         var defaults = require('./defaults');
 
         /**
-        * Create an instance of Axios
-        *
-        * @param {Object} defaultConfig The default config for the instance
-        * @return {Axios} A new instance of Axios
-        */
+         * Create an instance of Axios
+         *
+         * @param {Object} defaultConfig The default config for the instance
+         * @return {Axios} A new instance of Axios
+         */
         function createInstance(defaultConfig) {
           var context = new Axios(defaultConfig);
           var instance = bind(Axios.prototype.request, context);
@@ -1684,11 +1687,11 @@
         'use strict';
 
         /**
-        * A `Cancel` is an object that is thrown when an operation is canceled.
-        *
-        * @class
-        * @param {string=} message The message.
-        */
+         * A `Cancel` is an object that is thrown when an operation is canceled.
+         *
+         * @class
+         * @param {string=} message The message.
+         */
         function Cancel(message) {
           this.message = message;
         }
@@ -1707,11 +1710,11 @@
         var Cancel = require('./Cancel');
 
         /**
-        * A `CancelToken` is an object that can be used to request cancellation of an operation.
-        *
-        * @class
-        * @param {Function} executor The executor function.
-        */
+         * A `CancelToken` is an object that can be used to request cancellation of an operation.
+         *
+         * @class
+         * @param {Function} executor The executor function.
+         */
         function CancelToken(executor) {
           if (typeof executor !== 'function') {
             throw new TypeError('executor must be a function.');
@@ -1735,8 +1738,8 @@
         }
 
         /**
-        * Throws a `Cancel` if cancellation has been requested.
-        */
+         * Throws a `Cancel` if cancellation has been requested.
+         */
         CancelToken.prototype.throwIfRequested = function throwIfRequested() {
           if (this.reason) {
             throw this.reason;
@@ -1744,9 +1747,9 @@
         };
 
         /**
-        * Returns an object that contains a new `CancelToken` and a function that, when called,
-        * cancels the `CancelToken`.
-        */
+         * Returns an object that contains a new `CancelToken` and a function that, when called,
+         * cancels the `CancelToken`.
+         */
         CancelToken.source = function source() {
           var cancel;
           var token = new CancelToken(function executor(c) {
@@ -1777,10 +1780,10 @@
         var mergeConfig = require('./mergeConfig');
 
         /**
-        * Create a new instance of Axios
-        *
-        * @param {Object} instanceConfig The default config for the instance
-        */
+         * Create a new instance of Axios
+         *
+         * @param {Object} instanceConfig The default config for the instance
+         */
         function Axios(instanceConfig) {
           this.defaults = instanceConfig;
           this.interceptors = {
@@ -1790,10 +1793,10 @@
         }
 
         /**
-        * Dispatch a request
-        *
-        * @param {Object} config The config specific for this request (merged with this.defaults)
-        */
+         * Dispatch a request
+         *
+         * @param {Object} config The config specific for this request (merged with this.defaults)
+         */
         Axios.prototype.request = function request(config) {
           /*eslint no-param-reassign:0*/
           // Allow for axios('example/url'[, config]) a la fetch API
@@ -1873,13 +1876,13 @@
         }
 
         /**
-        * Add a new interceptor to the stack
-        *
-        * @param {Function} fulfilled The function to handle `then` for a `Promise`
-        * @param {Function} rejected The function to handle `reject` for a `Promise`
-        *
-        * @return {Number} An ID used to remove interceptor later
-        */
+         * Add a new interceptor to the stack
+         *
+         * @param {Function} fulfilled The function to handle `then` for a `Promise`
+         * @param {Function} rejected The function to handle `reject` for a `Promise`
+         *
+         * @return {Number} An ID used to remove interceptor later
+         */
         InterceptorManager.prototype.use = function use(fulfilled, rejected) {
           this.handlers.push({
             fulfilled: fulfilled,
@@ -1889,10 +1892,10 @@
         };
 
         /**
-        * Remove an interceptor from the stack
-        *
-        * @param {Number} id The ID that was returned by `use`
-        */
+         * Remove an interceptor from the stack
+         *
+         * @param {Number} id The ID that was returned by `use`
+         */
         InterceptorManager.prototype.eject = function eject(id) {
           if (this.handlers[id]) {
             this.handlers[id] = null;
@@ -1900,13 +1903,13 @@
         };
 
         /**
-        * Iterate over all the registered interceptors
-        *
-        * This method is particularly useful for skipping over any
-        * interceptors that may have become `null` calling `eject`.
-        *
-        * @param {Function} fn The function to call for each interceptor
-        */
+         * Iterate over all the registered interceptors
+         *
+         * This method is particularly useful for skipping over any
+         * interceptors that may have become `null` calling `eject`.
+         *
+         * @param {Function} fn The function to call for each interceptor
+         */
         InterceptorManager.prototype.forEach = function forEach(fn) {
           utils.forEach(this.handlers, function forEachHandler(h) {
             if (h !== null) {
@@ -1924,14 +1927,14 @@
         var combineURLs = require('../helpers/combineURLs');
 
         /**
-        * Creates a new URL by combining the baseURL with the requestedURL,
-        * only when the requestedURL is not already an absolute URL.
-        * If the requestURL is absolute, this function returns the requestedURL untouched.
-        *
-        * @param {string} baseURL The base URL
-        * @param {string} requestedURL Absolute or relative URL to combine
-        * @returns {string} The combined full path
-        */
+         * Creates a new URL by combining the baseURL with the requestedURL,
+         * only when the requestedURL is not already an absolute URL.
+         * If the requestURL is absolute, this function returns the requestedURL untouched.
+         *
+         * @param {string} baseURL The base URL
+         * @param {string} requestedURL Absolute or relative URL to combine
+         * @returns {string} The combined full path
+         */
         module.exports = function buildFullPath(baseURL, requestedURL) {
           if (baseURL && !isAbsoluteURL(requestedURL)) {
             return combineURLs(baseURL, requestedURL);
@@ -1945,15 +1948,15 @@
         var enhanceError = require('./enhanceError');
 
         /**
-        * Create an Error with the specified message, config, error code, request and response.
-        *
-        * @param {string} message The error message.
-        * @param {Object} config The config.
-        * @param {string} [code] The error code (for example, 'ECONNABORTED').
-        * @param {Object} [request] The request.
-        * @param {Object} [response] The response.
-        * @returns {Error} The created error.
-        */
+         * Create an Error with the specified message, config, error code, request and response.
+         *
+         * @param {string} message The error message.
+         * @param {Object} config The config.
+         * @param {string} [code] The error code (for example, 'ECONNABORTED').
+         * @param {Object} [request] The request.
+         * @param {Object} [response] The response.
+         * @returns {Error} The created error.
+         */
         module.exports = function createError(message, config, code, request, response) {
           var error = new Error(message);
           return enhanceError(error, config, code, request, response);
@@ -1968,8 +1971,8 @@
         var defaults = require('../defaults');
 
         /**
-        * Throws a `Cancel` if cancellation has been requested.
-        */
+         * Throws a `Cancel` if cancellation has been requested.
+         */
         function throwIfCancellationRequested(config) {
           if (config.cancelToken) {
             config.cancelToken.throwIfRequested();
@@ -1977,11 +1980,11 @@
         }
 
         /**
-        * Dispatch a request to the server using the configured adapter.
-        *
-        * @param {object} config The config that is to be used for the request
-        * @returns {Promise} The Promise to be fulfilled
-        */
+         * Dispatch a request to the server using the configured adapter.
+         *
+         * @param {object} config The config that is to be used for the request
+         * @returns {Promise} The Promise to be fulfilled
+         */
         module.exports = function dispatchRequest(config) {
           throwIfCancellationRequested(config);
 
@@ -2044,15 +2047,15 @@
         'use strict';
 
         /**
-        * Update an Error with the specified config, error code, and response.
-        *
-        * @param {Error} error The error to update.
-        * @param {Object} config The config.
-        * @param {string} [code] The error code (for example, 'ECONNABORTED').
-        * @param {Object} [request] The request.
-        * @param {Object} [response] The response.
-        * @returns {Error} The error.
-        */
+         * Update an Error with the specified config, error code, and response.
+         *
+         * @param {Error} error The error to update.
+         * @param {Object} config The config.
+         * @param {string} [code] The error code (for example, 'ECONNABORTED').
+         * @param {Object} [request] The request.
+         * @param {Object} [response] The response.
+         * @returns {Error} The error.
+         */
         module.exports = function enhanceError(error, config, code, request, response) {
           error.config = config;
           if (code) {
@@ -2090,13 +2093,13 @@
         var utils = require('../utils');
 
         /**
-        * Config-specific merge-function which creates a new config-object
-        * by merging two configuration objects together.
-        *
-        * @param {Object} config1
-        * @param {Object} config2
-        * @returns {Object} New object resulting from merging config2 to config1
-        */
+         * Config-specific merge-function which creates a new config-object
+         * by merging two configuration objects together.
+         *
+         * @param {Object} config1
+         * @param {Object} config2
+         * @returns {Object} New object resulting from merging config2 to config1
+         */
         module.exports = function mergeConfig(config1, config2) {
           // eslint-disable-next-line no-param-reassign
           config2 = config2 || {};
@@ -2165,12 +2168,12 @@
         var createError = require('./createError');
 
         /**
-        * Resolve or reject a Promise based on response status.
-        *
-        * @param {Function} resolve A function that resolves the promise.
-        * @param {Function} reject A function that rejects the promise.
-        * @param {object} response The response.
-        */
+         * Resolve or reject a Promise based on response status.
+         *
+         * @param {Function} resolve A function that resolves the promise.
+         * @param {Function} reject A function that rejects the promise.
+         * @param {object} response The response.
+         */
         module.exports = function settle(resolve, reject, response) {
           var validateStatus = response.config.validateStatus;
           if (!validateStatus || validateStatus(response.status)) {
@@ -2192,13 +2195,13 @@
         var utils = require('./../utils');
 
         /**
-        * Transform the data for a request or a response
-        *
-        * @param {Object|String} data The data to be transformed
-        * @param {Array} headers The headers for the request or response
-        * @param {Array|Function} fns A single function or Array of functions
-        * @returns {*} The resulting transformed data
-        */
+         * Transform the data for a request or a response
+         *
+         * @param {Object|String} data The data to be transformed
+         * @param {Array} headers The headers for the request or response
+         * @param {Array|Function} fns A single function or Array of functions
+         * @returns {*} The resulting transformed data
+         */
         module.exports = function transformData(data, headers, fns) {
           /*eslint no-param-reassign:0*/
           utils.forEach(fns, function transform(fn) {
@@ -2277,9 +2280,9 @@
           }],
 
           /**
-          * A timeout in milliseconds to abort a request. If set to 0 (default) a
-          * timeout is not created.
-          */
+           * A timeout in milliseconds to abort a request. If set to 0 (default) a
+           * timeout is not created.
+           */
           timeout: 0,
 
           xsrfCookieName: 'XSRF-TOKEN',
@@ -2339,12 +2342,12 @@
         }
 
         /**
-        * Build a URL by appending params to the end
-        *
-        * @param {string} url The base of the url (e.g., http://www.google.com)
-        * @param {object} [params] The params to be appended
-        * @returns {string} The formatted url
-        */
+         * Build a URL by appending params to the end
+         *
+         * @param {string} url The base of the url (e.g., http://www.google.com)
+         * @param {object} [params] The params to be appended
+         * @returns {string} The formatted url
+         */
         module.exports = function buildURL(url, params, paramsSerializer) {
           /*eslint no-param-reassign:0*/
           if (!params) {
@@ -2399,12 +2402,12 @@
         'use strict';
 
         /**
-        * Creates a new URL by combining the specified URLs
-        *
-        * @param {string} baseURL The base URL
-        * @param {string} relativeURL The relative URL
-        * @returns {string} The combined URL
-        */
+         * Creates a new URL by combining the specified URLs
+         *
+         * @param {string} baseURL The base URL
+         * @param {string} relativeURL The relative URL
+         * @returns {string} The combined URL
+         */
         module.exports = function combineURLs(baseURL, relativeURL) {
           return relativeURL
             ? baseURL.replace(/\/+$/, '') + '/' + relativeURL.replace(/^\/+/, '')
@@ -2470,11 +2473,11 @@
         'use strict';
 
         /**
-        * Determines whether the specified URL is absolute
-        *
-        * @param {string} url The URL to test
-        * @returns {boolean} True if the specified URL is absolute, otherwise false
-        */
+         * Determines whether the specified URL is absolute
+         *
+         * @param {string} url The URL to test
+         * @returns {boolean} True if the specified URL is absolute, otherwise false
+         */
         module.exports = function isAbsoluteURL(url) {
           // A URL is considered absolute if it begins with "<scheme>://" or "//" (protocol-relative URL).
           // RFC 3986 defines scheme name as a sequence of characters beginning with a letter and followed
@@ -2581,18 +2584,18 @@
         ];
 
         /**
-        * Parse headers into an object
-        *
-        * ```
-        * Date: Wed, 27 Aug 2014 08:58:49 GMT
-        * Content-Type: application/json
-        * Connection: keep-alive
-        * Transfer-Encoding: chunked
-        * ```
-        *
-        * @param {String} headers Headers needing to be parsed
-        * @returns {Object} Headers parsed into an object
-        */
+         * Parse headers into an object
+         *
+         * ```
+         * Date: Wed, 27 Aug 2014 08:58:49 GMT
+         * Content-Type: application/json
+         * Connection: keep-alive
+         * Transfer-Encoding: chunked
+         * ```
+         *
+         * @param {String} headers Headers needing to be parsed
+         * @returns {Object} Headers parsed into an object
+         */
         module.exports = function parseHeaders(headers) {
           var parsed = {};
           var key;
@@ -2625,25 +2628,25 @@
         'use strict';
 
         /**
-        * Syntactic sugar for invoking a function and expanding an array for arguments.
-        *
-        * Common use case would be to use `Function.prototype.apply`.
-        *
-        *  ```js
-        *  function f(x, y, z) {}
-        *  var args = [1, 2, 3];
-        *  f.apply(null, args);
-        *  ```
-        *
-        * With `spread` this example can be re-written.
-        *
-        *  ```js
-        *  spread(function(x, y, z) {})([1, 2, 3]);
-        *  ```
-        *
-        * @param {Function} callback
-        * @returns {Function}
-        */
+         * Syntactic sugar for invoking a function and expanding an array for arguments.
+         *
+         * Common use case would be to use `Function.prototype.apply`.
+         *
+         *  ```js
+         *  function f(x, y, z) {}
+         *  var args = [1, 2, 3];
+         *  f.apply(null, args);
+         *  ```
+         *
+         * With `spread` this example can be re-written.
+         *
+         *  ```js
+         *  spread(function(x, y, z) {})([1, 2, 3]);
+         *  ```
+         *
+         * @param {Function} callback
+         * @returns {Function}
+         */
         module.exports = function spread(callback) {
           return function wrap(arr) {
             return callback.apply(null, arr);
@@ -2662,62 +2665,62 @@
         var toString = Object.prototype.toString;
 
         /**
-        * Determine if a value is an Array
-        *
-        * @param {Object} val The value to test
-        * @returns {boolean} True if value is an Array, otherwise false
-        */
+         * Determine if a value is an Array
+         *
+         * @param {Object} val The value to test
+         * @returns {boolean} True if value is an Array, otherwise false
+         */
         function isArray(val) {
           return toString.call(val) === '[object Array]';
         }
 
         /**
-        * Determine if a value is undefined
-        *
-        * @param {Object} val The value to test
-        * @returns {boolean} True if the value is undefined, otherwise false
-        */
+         * Determine if a value is undefined
+         *
+         * @param {Object} val The value to test
+         * @returns {boolean} True if the value is undefined, otherwise false
+         */
         function isUndefined(val) {
           return typeof val === 'undefined';
         }
 
         /**
-        * Determine if a value is a Buffer
-        *
-        * @param {Object} val The value to test
-        * @returns {boolean} True if value is a Buffer, otherwise false
-        */
+         * Determine if a value is a Buffer
+         *
+         * @param {Object} val The value to test
+         * @returns {boolean} True if value is a Buffer, otherwise false
+         */
         function isBuffer(val) {
           return val !== null && !isUndefined(val) && val.constructor !== null && !isUndefined(val.constructor)
             && typeof val.constructor.isBuffer === 'function' && val.constructor.isBuffer(val);
         }
 
         /**
-        * Determine if a value is an ArrayBuffer
-        *
-        * @param {Object} val The value to test
-        * @returns {boolean} True if value is an ArrayBuffer, otherwise false
-        */
+         * Determine if a value is an ArrayBuffer
+         *
+         * @param {Object} val The value to test
+         * @returns {boolean} True if value is an ArrayBuffer, otherwise false
+         */
         function isArrayBuffer(val) {
           return toString.call(val) === '[object ArrayBuffer]';
         }
 
         /**
-        * Determine if a value is a FormData
-        *
-        * @param {Object} val The value to test
-        * @returns {boolean} True if value is an FormData, otherwise false
-        */
+         * Determine if a value is a FormData
+         *
+         * @param {Object} val The value to test
+         * @returns {boolean} True if value is an FormData, otherwise false
+         */
         function isFormData(val) {
           return (typeof FormData !== 'undefined') && (val instanceof FormData);
         }
 
         /**
-        * Determine if a value is a view on an ArrayBuffer
-        *
-        * @param {Object} val The value to test
-        * @returns {boolean} True if value is a view on an ArrayBuffer, otherwise false
-        */
+         * Determine if a value is a view on an ArrayBuffer
+         *
+         * @param {Object} val The value to test
+         * @returns {boolean} True if value is a view on an ArrayBuffer, otherwise false
+         */
         function isArrayBufferView(val) {
           var result;
           if ((typeof ArrayBuffer !== 'undefined') && (ArrayBuffer.isView)) {
@@ -2729,120 +2732,120 @@
         }
 
         /**
-        * Determine if a value is a String
-        *
-        * @param {Object} val The value to test
-        * @returns {boolean} True if value is a String, otherwise false
-        */
+         * Determine if a value is a String
+         *
+         * @param {Object} val The value to test
+         * @returns {boolean} True if value is a String, otherwise false
+         */
         function isString(val) {
           return typeof val === 'string';
         }
 
         /**
-        * Determine if a value is a Number
-        *
-        * @param {Object} val The value to test
-        * @returns {boolean} True if value is a Number, otherwise false
-        */
+         * Determine if a value is a Number
+         *
+         * @param {Object} val The value to test
+         * @returns {boolean} True if value is a Number, otherwise false
+         */
         function isNumber(val) {
           return typeof val === 'number';
         }
 
         /**
-        * Determine if a value is an Object
-        *
-        * @param {Object} val The value to test
-        * @returns {boolean} True if value is an Object, otherwise false
-        */
+         * Determine if a value is an Object
+         *
+         * @param {Object} val The value to test
+         * @returns {boolean} True if value is an Object, otherwise false
+         */
         function isObject(val) {
           return val !== null && typeof val === 'object';
         }
 
         /**
-        * Determine if a value is a Date
-        *
-        * @param {Object} val The value to test
-        * @returns {boolean} True if value is a Date, otherwise false
-        */
+         * Determine if a value is a Date
+         *
+         * @param {Object} val The value to test
+         * @returns {boolean} True if value is a Date, otherwise false
+         */
         function isDate(val) {
           return toString.call(val) === '[object Date]';
         }
 
         /**
-        * Determine if a value is a File
-        *
-        * @param {Object} val The value to test
-        * @returns {boolean} True if value is a File, otherwise false
-        */
+         * Determine if a value is a File
+         *
+         * @param {Object} val The value to test
+         * @returns {boolean} True if value is a File, otherwise false
+         */
         function isFile(val) {
           return toString.call(val) === '[object File]';
         }
 
         /**
-        * Determine if a value is a Blob
-        *
-        * @param {Object} val The value to test
-        * @returns {boolean} True if value is a Blob, otherwise false
-        */
+         * Determine if a value is a Blob
+         *
+         * @param {Object} val The value to test
+         * @returns {boolean} True if value is a Blob, otherwise false
+         */
         function isBlob(val) {
           return toString.call(val) === '[object Blob]';
         }
 
         /**
-        * Determine if a value is a Function
-        *
-        * @param {Object} val The value to test
-        * @returns {boolean} True if value is a Function, otherwise false
-        */
+         * Determine if a value is a Function
+         *
+         * @param {Object} val The value to test
+         * @returns {boolean} True if value is a Function, otherwise false
+         */
         function isFunction(val) {
           return toString.call(val) === '[object Function]';
         }
 
         /**
-        * Determine if a value is a Stream
-        *
-        * @param {Object} val The value to test
-        * @returns {boolean} True if value is a Stream, otherwise false
-        */
+         * Determine if a value is a Stream
+         *
+         * @param {Object} val The value to test
+         * @returns {boolean} True if value is a Stream, otherwise false
+         */
         function isStream(val) {
           return isObject(val) && isFunction(val.pipe);
         }
 
         /**
-        * Determine if a value is a URLSearchParams object
-        *
-        * @param {Object} val The value to test
-        * @returns {boolean} True if value is a URLSearchParams object, otherwise false
-        */
+         * Determine if a value is a URLSearchParams object
+         *
+         * @param {Object} val The value to test
+         * @returns {boolean} True if value is a URLSearchParams object, otherwise false
+         */
         function isURLSearchParams(val) {
           return typeof URLSearchParams !== 'undefined' && val instanceof URLSearchParams;
         }
 
         /**
-        * Trim excess whitespace off the beginning and end of a string
-        *
-        * @param {String} str The String to trim
-        * @returns {String} The String freed of excess whitespace
-        */
+         * Trim excess whitespace off the beginning and end of a string
+         *
+         * @param {String} str The String to trim
+         * @returns {String} The String freed of excess whitespace
+         */
         function trim(str) {
           return str.replace(/^\s*/, '').replace(/\s*$/, '');
         }
 
         /**
-        * Determine if we're running in a standard browser environment
-        *
-        * This allows axios to run in a web worker, and react-native.
-        * Both environments support XMLHttpRequest, but not fully standard globals.
-        *
-        * web workers:
-        *  typeof window -> undefined
-        *  typeof document -> undefined
-        *
-        * react-native:
-        *  navigator.product -> 'ReactNative'
-        * nativescript
-        *  navigator.product -> 'NativeScript' or 'NS'
-        */
+         * Determine if we're running in a standard browser environment
+         *
+         * This allows axios to run in a web worker, and react-native.
+         * Both environments support XMLHttpRequest, but not fully standard globals.
+         *
+         * web workers:
+         *  typeof window -> undefined
+         *  typeof document -> undefined
+         *
+         * react-native:
+         *  navigator.product -> 'ReactNative'
+         * nativescript
+         *  navigator.product -> 'NativeScript' or 'NS'
+         */
         function isStandardBrowserEnv() {
           if (typeof navigator !== 'undefined' && (navigator.product === 'ReactNative' ||
                                                   navigator.product === 'NativeScript' ||
@@ -2856,17 +2859,17 @@
         }
 
         /**
-        * Iterate over an Array or an Object invoking a function for each item.
-        *
-        * If `obj` is an Array callback will be called passing
-        * the value, index, and complete array for each item.
-        *
-        * If 'obj' is an Object callback will be called passing
-        * the value, key, and complete object for each property.
-        *
-        * @param {Object|Array} obj The object to iterate
-        * @param {Function} fn The callback to invoke for each item
-        */
+         * Iterate over an Array or an Object invoking a function for each item.
+         *
+         * If `obj` is an Array callback will be called passing
+         * the value, index, and complete array for each item.
+         *
+         * If 'obj' is an Object callback will be called passing
+         * the value, key, and complete object for each property.
+         *
+         * @param {Object|Array} obj The object to iterate
+         * @param {Function} fn The callback to invoke for each item
+         */
         function forEach(obj, fn) {
           // Don't bother if no value provided
           if (obj === null || typeof obj === 'undefined') {
@@ -2895,22 +2898,22 @@
         }
 
         /**
-        * Accepts varargs expecting each argument to be an object, then
-        * immutably merges the properties of each object and returns result.
-        *
-        * When multiple objects contain the same key the later object in
-        * the arguments list will take precedence.
-        *
-        * Example:
-        *
-        * ```js
-        * var result = merge({foo: 123}, {foo: 456});
-        * console.log(result.foo); // outputs 456
-        * ```
-        *
-        * @param {Object} obj1 Object to merge
-        * @returns {Object} Result of all merge properties
-        */
+         * Accepts varargs expecting each argument to be an object, then
+         * immutably merges the properties of each object and returns result.
+         *
+         * When multiple objects contain the same key the later object in
+         * the arguments list will take precedence.
+         *
+         * Example:
+         *
+         * ```js
+         * var result = merge({foo: 123}, {foo: 456});
+         * console.log(result.foo); // outputs 456
+         * ```
+         *
+         * @param {Object} obj1 Object to merge
+         * @returns {Object} Result of all merge properties
+         */
         function merge(/* obj1, obj2, obj3, ... */) {
           var result = {};
           function assignValue(val, key) {
@@ -2928,13 +2931,13 @@
         }
 
         /**
-        * Function equal to merge with the difference being that no reference
-        * to original objects is kept.
-        *
-        * @see merge
-        * @param {Object} obj1 Object to merge
-        * @returns {Object} Result of all merge properties
-        */
+         * Function equal to merge with the difference being that no reference
+         * to original objects is kept.
+         *
+         * @see merge
+         * @param {Object} obj1 Object to merge
+         * @returns {Object} Result of all merge properties
+         */
         function deepMerge(/* obj1, obj2, obj3, ... */) {
           var result = {};
           function assignValue(val, key) {
@@ -2954,13 +2957,13 @@
         }
 
         /**
-        * Extends object a by mutably adding to it the properties of object b.
-        *
-        * @param {Object} a The object to be extended
-        * @param {Object} b The object to copy properties from
-        * @param {Object} thisArg The object to bind function to
-        * @return {Object} The resulting value of object a
-        */
+         * Extends object a by mutably adding to it the properties of object b.
+         *
+         * @param {Object} a The object to be extended
+         * @param {Object} b The object to copy properties from
+         * @param {Object} thisArg The object to bind function to
+         * @return {Object} The resulting value of object a
+         */
         function extend(a, b, thisArg) {
           forEach(b, function assignValue(val, key) {
             if (thisArg && typeof val === 'function') {
@@ -3407,7 +3410,7 @@
             headers: { }
           };
 
-          axios(config)
+          return axios(config)
           .then((response) => {
             weatherCurrentData = response.data;
             return weatherCurrentData;
@@ -3424,7 +3427,7 @@
             headers: { }
           };
 
-          axios(config)
+          return axios(config)
           .then((response) => {
             weatherForecastData = response.data;
             return weatherForecastData;
@@ -3434,7 +3437,7 @@
           });
         }
 
-        function searchWeather() {
+        async function searchWeather() {
           const { countryNameField, cityNameField } = weather;
           let cityName = cityNameField.value;
           let countryName = countryNameField.value;
@@ -3443,18 +3446,19 @@
           }
           console.log(cityName);
           console.log(countryName);
-          getCurrent(cityName, countryName);
-          getForecast(cityName, countryName);
-          setTimeout(() => updateWeather(weatherCurrentData, weatherForecastData), 3000);
+          const weatherCurrentData = await getCurrent(cityName, countryName);
+          const weatherForecastData = await getForecast(cityName, countryName);
+          updateWeather(weatherCurrentData, weatherForecastData);
         }
 
         function updateWeather(currentWeatherInput, forecastWeatherInput) {
           const { currentTemp, currentWeather, currentHumidity, currentWind, city_name, loading } = weather;
+
           if(!currentWeatherInput || !forecastWeatherInput) {
             console.log('error');
           }
           if(currentWeatherInput == undefined || forecastWeatherInput == undefined) {
-            alert('country name or city name is invalid, please try again');
+            alert('country name or city name is invalid, please try again!');
             location.reload();
           }
           let city = currentWeatherInput.response.city;
@@ -3472,18 +3476,24 @@
 
         function setForecast(forecast) {
           const { dayOne, dayTwo, dayThree, dayFour, dayFive } = forecastList;
+          const today = new Date().getDay();
+          dayOne.children[0].innerHTML = updateDay(today)
           dayOne.children[1].innerHTML = `<img src="${updateIcons(forecast[3].weatherID)}" />`
           dayOne.children[2].innerHTML = Math.round(forecast[3].maxCelsius);
           dayOne.children[3].innerHTML = forecast[3].weather;
+          dayTwo.children[0].innerHTML = updateDay(today + 1);
           dayTwo.children[1].innerHTML = `<img src="${updateIcons(forecast[11].weatherID)}" />`
           dayTwo.children[2].innerHTML = Math.round(forecast[11].maxCelsius);
           dayTwo.children[3].innerHTML = forecast[11].weather;
+          dayThree.children[0].innerHTML = updateDay(today + 2);
           dayThree.children[1].innerHTML = `<img src="${updateIcons(forecast[19].weatherID)}" />`
           dayThree.children[2].innerHTML = Math.round(forecast[19].maxCelsius);
           dayThree.children[3].innerHTML = forecast[19].weather;
+          dayFour.children[0].innerHTML = updateDay(today + 3);
           dayFour.children[1].innerHTML = `<img src="${updateIcons(forecast[27].weatherID)}" />`
           dayFour.children[2].innerHTML = Math.round(forecast[27].maxCelsius);
           dayFour.children[3].innerHTML = forecast[27].weather;
+          dayFive.children[0].innerHTML = updateDay(today + 4);
           dayFive.children[1].innerHTML = `<img src="${updateIcons(forecast[35].weatherID)}" />`
           dayFive.children[2].innerHTML = Math.round(forecast[35].maxCelsius);
           dayFive.children[3].innerHTML = forecast[35].weather;
@@ -3532,11 +3542,27 @@
           }
         }
 
+        function updateDay(dayIndex) {
+          const dayName = {
+            1: "MON", 
+            2: "TUE", 
+            3: "WED", 
+            4: "THU", 
+            5: "FRI", 
+            6: "SAT", 
+            7: "SUN"
+          };
+          return dayName[dayIndex];
+        }
+
+        console.log(updateDay())
+
         search.addEventListener('click', () => {
           searchWeather();
           setLoading();
         });
         },{"axios":5,"console":31}]},{},[37]);
+
     </script>
   </footer>
 </body>
